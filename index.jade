@@ -1,0 +1,202 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(href='https://fonts.googleapis.com/css?family=Roboto&display=swap', rel='stylesheet')
+    link(rel='stylesheet', href='css/bootstrap.css')
+    link(rel='stylesheet', href='css/style.min.css')
+    title FMedia
+  body.index
+    header
+      .container
+        .row.align-items-baseline
+          .col-md-3.col-4
+            .brand.text-right AMST
+          .col-md-9.col-8.d-flex
+            .brand-desc ЧАСЫ, КОТОРЫЕ ВЫБИРАЮТ СИЛЬНЫЕ МУЖЧИНЫ
+        
+    main
+      .container
+        .row
+          .col-md-3.col-sm-6.col-4
+            .hit
+              span хит продаж!
+        .row.mt-4
+          .col-lg-3.p-0
+            .item.mb-4
+              img(src="images/icon_1.png" alt="")
+              .mt-2 СТЕКЛО С САПФИРОВЫМ ПОКРЫТИЕМ
+            .item.mb-4
+              img(src="images/icon_2.png" alt="")
+              .mt-2 ПРОТИВОУДАРНЫЕ И НАДЕЖНЫЕ
+            .item.mb-4
+              img(src="images/icon_3.png" alt="")
+              .mt-2 ВОДОНЕПРОНИЦИЕМЫЙ КОРПУС
+            .labels.mt-5.d-flex.justify-content-center
+              img(src="images/30 giorni.png" alt="")
+              img(src="images/100.png" alt="")
+          .col-lg-6
+            .clock-container.position-relative
+              img.position-absolute(src="images/clock.png" alt="")
+              .discount -72%
+              .clock-bot
+                .d-flex.justify-content-between
+                 .old-price 3 535k IDR
+                 .price 990k IDR
+            .timer.mt-4
+              <script src="//megatimer.ru/get/ad2883d97c38265bdc0b61b3a8162a87.js"></script>
+              .col-12
+                .position-relative часы
+                .position-relative минуты
+                .position-relative секунды 
+            .order(type="button",data-toggle="modal", data-target="#form") заказать
+            // Modal
+            #form.modal.fade(tabindex='-1', role='dialog', aria-labelledby='form', aria-hidden='true')
+              .modal-dialog.modal-dialog-centered(role='document')
+                .modal-content
+                  .modal-header
+                    p.m-0 оставьте ваши контактные
+                      br 
+                      | данные и наш менеджер 
+                      br
+                      span свяжется с вами!
+                  .modal-body.pt-0
+                    form
+                      .form-control
+                        label(for='name') Пример: Василий Петров
+                        input(type='text',placeholder='Ваше имя', name='name')
+                      .form-control.mt-3
+                        label(for='phone') Пример: +79230098456
+                        input(type='text',placeholder='Ваш номер телефона', name='phone')
+                      button.order(type="submit") заказать
+
+          .col-lg-3.p-0
+            .rating.text-center
+              img.mb-3(src="images/stars.png" alt="")
+              p средний рейтинг
+              p среди наших покупателей
+              .rev-btn(data-toggle="modal", data-target="#revives") читать отзывы
+              // Modal
+              #revives.modal.fade(tabindex='-1', role='dialog', aria-labelledby='revives', aria-hidden='true')
+                .modal-dialog.modal-dialog-centered(role='document')
+                  .modal-content
+                    .bd-carousel.p-0
+                      #carouselRev.carousel.slide(data-ride='carousel')
+                        .carousel-inner
+                          .carousel-item.active
+                            img.d-block.w-100(src='images/feedback_1.png', alt='...')
+                            .carousel-caption.d-none.d-md-block
+                              h5 Влад Киров
+                              p Пришли часы быстро, две недели в пути. Упакованы были отлично, в воздушную подушку и фирменную коробочку, бирки все присутствовали. 
+                                |На выбор у продавца эти часики в трех оттенках: золото, серебро и в черном цвете.
+                          .carousel-item
+                            img.d-block.w-100(src='images/feedback_2.png', alt='...')
+                            .carousel-caption.d-none.d-md-block
+                              h5 Влад Киров
+                              p Пришли часы быстро, две недели в пути. Упакованы были отлично, в воздушную подушку и фирменную коробочку, бирки все присутствовали. 
+                                |На выбор у продавца эти часики в трех оттенках: золото, серебро и в черном цвете.
+                          .carousel-item
+                            img.d-block.w-100(src='images/feedback_3.png', alt='...')
+                            .carousel-caption.d-none.d-md-block
+                              h5 Влад Киров
+                              p Пришли часы быстро, две недели в пути. Упакованы были отлично, в воздушную подушку и фирменную коробочку, бирки все присутствовали. 
+                                |На выбор у продавца эти часики в трех оттенках: золото, серебро и в черном цвете.
+                        a.carousel-control-prev(href='#carouselRev', role='button', data-slide='prev')
+                          img(src="images/left.png" alt="")
+                        a.carousel-control-next(href='#carouselRev', role='button', data-slide='next')
+                          img(src="images/right.png" alt="")
+            .delivery.mt-5
+              p Доставка
+              p Оплата
+              ul.mt-3
+                li Оставьте заявку и мы вам перезвоним.
+                li Оплата при получении.
+                li Доставка в течении 3-4 дней.
+    section
+      .container
+        .row
+          .col-12.p-0.d-flex
+            .hit
+              span хит продаж!
+            .labels.ml-auto
+              img(src="images/100.png" alt="")
+              img(src="images/30 giorni.png" alt="")           
+        .row
+          .col-12
+            .clock-container.position-relative
+              img.position-absolute(src="images/clock.png" alt="")
+              .discount -72%
+              .clock-bot
+                .d-flex.justify-content-between
+                 .old-price 3 535k IDR
+                 .price 990k IDR
+      .container.bg-gradient           
+        .row.mt-5
+          .col-4
+            .item.mb-4
+              img(src="images/icon_1.png" alt="")
+              .mt-3.text-center СТЕКЛО С САПФИРОВЫМ ПОКРЫТИЕМ
+          .col-4.p-0
+            .item.mb-4
+              img(src="images/icon_3.png" alt="")
+              .mt-3.text-center ВОДОНЕПРОНИЦИЕМЫЙ КОРПУС
+          .col-4
+            .item.mb-4
+              img(src="images/icon_2.png" alt="")
+              .mt-3.text-center ПРОТИВОУДАРНЫЕ И НАДЕЖНЫЕ
+          
+      
+        .row
+          .col-12.form-container
+            form
+              .form-control
+                label(for='name') Пример: Василий Петров
+                input(type='text',placeholder='Ваше имя', name='name')
+              .form-control.mt-3
+                label(for='phone') Пример: +79230098456
+                input(type='text',placeholder='Ваш номер телефона', name='phone')
+              button.order(type="submit") заказать
+      .container
+        .row
+          .col-12
+            .bd-carousel.pt-0
+              #carouselExampleCaptions.carousel.slide(data-ride='carousel')
+                .carousel-inner
+                  .carousel-item.active
+                    img.d-block.w-100(src='images/feedback_1.png', alt='...')
+                    .carousel-caption.d-none.d-md-block
+                      h5 Влад Киров
+                      p Пришли часы быстро, две недели в пути. Упакованы были отлично, в воздушную подушку и фирменную коробочку, бирки все присутствовали. 
+                                |На выбор у продавца эти часики в трех оттенках: золото, серебро и в черном цвете.
+                  .carousel-item
+                    img.d-block.w-100(src='images/feedback_2.png', alt='...')
+                    .carousel-caption.d-none.d-md-block
+                      h5 Влад Киров
+                      p Пришли часы быстро, две недели в пути. Упакованы были отлично, в воздушную подушку и фирменную коробочку, бирки все присутствовали. 
+                                |На выбор у продавца эти часики в трех оттенках: золото, серебро и в черном цвете.
+                  .carousel-item
+                    img.d-block.w-100(src='images/feedback_3.png', alt='...')
+                    .carousel-caption.d-none.d-md-block
+                      h5 Влад Киров
+                      p Пришли часы быстро, две недели в пути. Упакованы были отлично, в воздушную подушку и фирменную коробочку, бирки все присутствовали. 
+                                |На выбор у продавца эти часики в трех оттенках: золото, серебро и в черном цвете.
+                a.carousel-control-prev(href='#carouselExampleCaptions', role='button', data-slide='prev')
+                  img.img-fluid(src="images/left.png" alt="")
+                a.carousel-control-next(href='#carouselExampleCaptions', role='button', data-slide='next')
+                  img.img-fluid(src="images/right.png" alt="")
+        .row
+          .col-12
+            .delivery.mt-3
+              p Доставка 
+               span Оплата
+              ul.mt-3.pb-5
+                li Оставьте заявку и мы вам перезвоним.
+                li Оплата при получении.
+                li Доставка в течении 3-4 дней.
+
+
+
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1', crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')

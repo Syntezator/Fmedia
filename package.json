@@ -1,0 +1,20 @@
+{
+  "name": "fmedia",
+  "version": "1.0.0",
+  "description": "test task",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-jade": "^1.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-watch": "^5.0.1",
+    "gulp-watch-jade": "^1.0.2",
+    "gulp-watch-sass": "^1.4.1"
+  }
+}
